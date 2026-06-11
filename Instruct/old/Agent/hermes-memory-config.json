@@ -1,0 +1,18 @@
+{
+  "flushOnCompact": true,
+  "flushOnShutdown": true,
+  "flushMinTurns": 6,
+  "flushRecentMessages": 0,
+  "memoryMode": "policy-only",
+  "memoryPolicyStyle": "full",
+  "memoryCharLimit": 5000,
+  "userCharLimit": 5000,
+  "projectCharLimit": 5000,
+  "nudgeInterval": 10,
+  "nudgeToolCalls": 15,
+  "reviewEnabled": true,
+  "memoryOverflowStrategy": "auto-consolidate",
+  "consolidationTimeoutMs": 240000,
+  "llmModelOverride": "",
+  "llmThinkingOverride": "off"
+}

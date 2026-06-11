@@ -1,0 +1,205 @@
+{
+  "providers": {
+    "llamacpp": {
+      "api": "openai-completions",
+      "apiKey": "not-needed",
+      "baseUrl": "http://127.0.0.1:5001/v1",
+      "models": [
+        {
+          "_launch": true,
+          "contextWindow": 32000,
+          "id": "Claude 6.5 Sonnet",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 6000,
+          "reasoning": true
+        },
+        {
+          "_launch": true,
+          "contextWindow": 64000,
+          "id": "Qwen3.5-9B-Inga",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 4000,
+          "reasoning": true
+        },
+        {
+          "_launch": true,
+          "contextWindow": 128000,
+          "id": "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 3000,
+          "reasoning": false
+        },
+            {
+    "_launch": true,
+    "contextWindow": 64000,
+    "id": "Qwen3.6-35B-A3B-UD Magda",
+    "input": [
+      "text"
+    ],
+    "maxTokens": 16384,
+    "reasoning": false
+  },
+  {
+    "_launch": true,
+    "contextWindow": 64000,
+    "id": "Qwen3.6-35B-A3B-UD Magda-thinking",
+    "input": [
+      "text"
+    ],
+    "maxTokens": 16384,
+    "reasoning": true
+  },
+        {
+          "_launch": true,
+          "contextWindow": 64000,
+          "id": "Gemma-4-26B-A4B-it-MXFP4_MOE-Agness",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 6000,
+          "reasoning": true
+        },
+        {
+          "_launch": true,
+          "contextWindow": 64000,
+          "id": "Gemma-4-E4B-it-Julia",
+          "input": [
+            "text"
+          ],
+		  "maxTokens": 3000,
+          "reasoning": false
+		  
+		},        {
+          "_launch": true,
+          "contextWindow": 16000,
+          "id": "Gemma3-12b-q6-Jenifer",
+          "input": [
+            "text"
+          ],
+		   
+		  
+          "maxTokens": 3000,
+          "reasoning": false
+        },
+        
+        {
+          "_launch": true,
+          "contextWindow": 64000,
+          "id": "Qwen3.6-27B-Reasoning-Ingrend",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 6000,
+          "reasoning": true
+        }
+      ],
+      "stream": true,
+      "timeout": 600000
+    },
+	"llama-cpp-light": {
+      "baseUrl": "http://127.0.0.1:5005/v1",
+      "api": "openai-completions",
+      "apiKey": "not-needed",
+      "models": [
+        {
+          "id": "Gemma-4-E2B-it-Gerda",
+          "contextWindow": 20000,
+          "maxTokens": 4000,
+          "reasoning": false
+        },
+		{
+          "contextWindow": 32768,
+          "id": "Qwen3.5-9B-Inga",
+          "input": [
+            "text"
+          ],
+          "maxTokens": 4000,
+          "reasoning": true
+        },
+      ]
+    },
+
+    "lmstudio": {
+      "api": "openai-completions",
+      "apiKey": "not-needed",
+      "baseUrl": "http://127.0.0.1:5002/v1",
+      "models": [
+        {
+          "_launch": true,
+          "contextWindow": 127000,
+          "id": "Qwen3.0-30B-Reasoning",
+          "input": [
+            "text"
+          ],
+          "reasoning": true
+        }
+      ]
+    },
+    "ollama": {
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "baseUrl": "http://127.0.0.1:11434/v1",
+      "models": [
+        {
+          "_launch": true,
+          "contextWindow": 262144,
+          "id": "qwen3-coder:480b-cloud",
+          "input": [
+            "text"
+          ]
+        },
+        {
+          "_launch": true,
+          "contextWindow": 262144,
+          "id": "qwen3.5:cloud",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoning": true
+        },
+        {
+          "_launch": true,
+          "contextWindow": 262144,
+          "id": "glm-5.1:cloud",
+          "input": [
+            "text"
+          ]
+        },
+        {
+          "_launch": true,
+          "contextWindow": 262144,
+          "id": "qwen3:4b",
+          "input": [
+            "text"
+          ],
+          "reasoning": true
+        },
+        {
+          "_launch": true,
+          "contextWindow": 262144,
+          "id": "gemma4:31b-cloud",
+          "input": [
+            "text",
+            "image"
+          ],
+          "reasoning": true
+        },
+        {
+          "_launch": true,
+          "contextWindow": 262144,
+          "id": "SimonPu/qwen3:30B-Thinking-2507-Q4_K_XL",
+          "input": [
+            "text"
+          ]
+        }
+      ]
+    }
+  }
+}
