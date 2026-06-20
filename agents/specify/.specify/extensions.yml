@@ -1,0 +1,107 @@
+hooks:
+  before_constitution:
+    - id: pre_constitution
+      enabled: true
+      optional: false
+      extension: "your-extension"
+      command: "pre_constitution"
+      description: "Run before /speckit.constitution"
+
+  after_constitution:
+    - id: post_constitution
+      enabled: true
+      optional: true
+      extension: "your-extension"
+      command: "post_constitution"
+      description: "Run after /speckit.constitution"
+      prompt: "Run post-constitution hook?"
+
+  before_specify:
+    - id: pre_specify
+      enabled: true
+      optional: false
+      extension: "your-extension"
+      command: "pre_specify"
+      description: "Run before /speckit.specify"
+
+  after_specify:
+    - id: post_specify
+      enabled: true
+      optional: true
+      extension: "your-extension"
+      command: "post_specify"
+      description: "Run after /speckit.specify"
+      prompt: "Run post-specify hook?"
+
+  before_plan:
+    - id: pre_plan
+      enabled: true
+      optional: false
+      extension: "your-extension"
+      command: "pre_plan"
+      description: "Run before /speckit.plan"
+
+  after_plan:
+    - id: post_plan
+      enabled: true
+      optional: true
+      extension: "your-extension"
+      command: "post_plan"
+      description: "Run after /speckit.plan"
+      prompt: "Run post-plan hook?"
+
+  # before_tasks и after_tasks у вас уже есть — их можно оставить
+
+  # before_implement и after_implement уже есть
+
+  # Опциональные команды:
+  before_clarify:
+    - id: pre_clarify
+      enabled: true
+      optional: true
+      extension: "your-extension"
+      command: "pre_clarify"
+      description: "Run before /speckit.clarify"
+
+  after_clarify:
+    - id: post_clarify
+      enabled: true
+      optional: true
+      extension: "your-extension"
+      command: "post_clarify"
+      description: "Run after /speckit.clarify"
+      prompt: "Run post-clarify hook?"
+
+  before_analyze:
+    - id: pre_analyze
+      enabled: true
+      optional: true
+      extension: "your-extension"
+      command: "pre_analyze"
+      description: "Run before /speckit.analyze"
+
+  after_analyze:
+    - id: post_analyze
+      enabled: true
+      optional: true
+      extension: "your-extension"
+      command: "post_analyze"
+      description: "Run after /speckit.analyze"
+      prompt: "Run post-analyze hook?"
+
+  before_checklist:
+    - id: pre_checklist
+      enabled: true
+      optional: true
+      extension: "your-extension"
+      command: "pre_checklist"
+      description: "Run before /speckit.checklist"
+
+  after_checklist:
+    - id: post_checklist
+      enabled: true
+      optional: true
+      extension: "your-extension"
+      command: "post_checklist"
+      description: "Run after /speckit.checklist"
+      prompt: "Run post-checklist hook?"
